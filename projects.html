@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+Created by: Brooke Lyncrest
+File Name: projects.html
+Date: 12/03/2025
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Brooke's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Brooke's Portfolio</h1>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-button" id="menuButton" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <h2 class="section-title">My Projects</h2>
+        <p class="projects-intro">Click "View Project Video" to see each project in action!</p>
+        
+        <div class="projects-container">
+            <!-- Exam Project 1: My Digital Space - Personal Portfolio -->
+            <div class="project-item">
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="images/project1.png" alt="Personal Portfolio Website screenshot" class="project-screenshot">
+                        <button class="video-toggle" data-project="1" aria-label="Toggle video for Project 1">
+                            View Project Video
+                        </button>
+                        <video id="video-1" class="project-video hidden" controls>
+                            <source src="videos/project1.mp4" type="video/mp4">
+                            <p>Your browser doesn't support HTML5 video. <a href="videos/project1.mp4">Download the video</a> instead.</p>
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Exam Project 1: My Digital Space</h3>
+                        <p class="project-description">
+                            This project serves as my personal portfolio website. It showcases my current work project, hobbies I enjoy, and a brief bio about myself.
+                        </p>
+                        <div class="learning-outcomes">
+                            <h4>What I Learned:</h4>
+                            <ul>
+                                <li>Creating WireFrames of basic HTML pages to plan layout before coding</li>
+                                <li>Implementing 2-column webpage layouts using CSS</li>
+                                <li>Using external CSS stylesheets for better code organization</li>
+                                <li>Applying web accessibility best practices including semantic HTML and alt text</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exam Project 2: Advancing Technology -->
+            <div class="project-item">
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="images/project2.png" alt="Advancing Technology Website screenshot" class="project-screenshot">
+                        <button class="video-toggle" data-project="2" aria-label="Toggle video for Project 2">
+                            View Project Video
+                        </button>
+                        <video id="video-2" class="project-video hidden" controls>
+                            <source src="videos/project2.mp4" type="video/mp4">
+                            <p>Your browser doesn't support HTML5 video. <a href="videos/project2.mp4">Download the video</a> instead.</p>
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Exam Project 2: Advancing Technology</h3>
+                        <p class="project-description">
+                            This project serves as an informative website about the future of technology. It highlights various advancements in technology such as AI, robotics, and Internet of Things (IoT).
+                        </p>
+                        <div class="learning-outcomes">
+                            <h4>What I Learned:</h4>
+                            <ul>
+                                <li>Creating WireFrames for mobile and desktop versions of a website</li>
+                                <li>Using structural and dynamic pseudo-classes in CSS selectors</li>
+                                <li>Implementing CSS properties and functions in stylesheets for advanced styling</li>
+                                <li>Using HTML5 figure and figcaption elements for semantic image documentation</li>
+                                <li>Creating CSS grid rules that span elements across multiple columns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Team Project: Earth Day AKA Project 3 -->
+            <div class="project-item">
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="images/teamproject.png" alt="Earth Day Event Website screenshot" class="project-screenshot">
+                        <button class="video-toggle" data-project="3" aria-label="Toggle video for Project 3">
+                            View Project Video
+                        </button>
+                        <video id="video-3" class="project-video hidden" controls>
+                            <source src="videos/teamproject.mp4" type="video/mp4">
+                            <p>Your browser doesn't support HTML5 video. <a href="videos/teamproject.mp4">Download the video</a> instead.</p>
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Team Project: Earth Day</h3>
+                        <p class="project-description">
+                            This project serves as an event invitation page for an Earth Day get-together. It provides details about the event, including date, time, location details, and RSVP information.
+                        </p>
+                        <div class="learning-outcomes">
+                            <h4>What I Learned:</h4>
+                            <ul>
+                                <li>Collaborating with team members on a shared web project</li>
+                                <li>Getting started with A-Frame basics for 3D web experiences</li>
+                                <li>Using A-Frame elements and attributes to create immersive 3D webpage experiences</li>
+                                <li>Coordinating code contributions across multiple developers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Connect With Me!</h3>
+            <div class="contact-links">
+                <a href="mailto:brooke.lyncrest@southeasttech.edu" class="contact-link">
+                    <span>📧</span> Email
+                </a>
+                <a href="tel:+6514473881" class="contact-link">
+                    <span>📱</span> Phone
+                </a>
+                <a href="https://github.com/brookelyncrest" class="contact-link" target="_blank">
+                    <span>🐙</span> GitHub
+                </a>
+                <a href="https://linkedin.com/in/brookelyncrest" class="contact-link" target="_blank">
+                    <span>💼</span> LinkedIn
+                </a>
+            </div>
+        </div>
+        <p class="footer-text">&copy; 2025 Brooke's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

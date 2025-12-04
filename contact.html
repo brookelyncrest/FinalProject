@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+Created by: Brooke Lyncrest
+File Name: contact.html
+Date: 12/03/2025
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Brooke's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Bootstrap Grid Layout -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Brooke's Portfolio</h1>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-button" id="menuButton" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <h2 class="section-title">Contact Information</h2>
+
+        <!-- Bootstrap Grid Layout -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Contact Information Section - Left Column Desktop -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <section class="contact-info-section">
+                        <h3>Let's Talk!</h3>
+                        <p>Feel free to reach out on any of these channels</p>
+
+                        <div class="contact-details">
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-item-content">
+                                    <h4>Email</h4>
+                                    <a href="mailto:brooke.lyncrest@southeasttech.edu">brooke.lyncrest@southeasttech.edu</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-item-content">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+16514473881">(651)447-3881</a>
+                                </div>
+                            </div>
+
+                            <!-- GitHub -->
+                            <div class="contact-item">
+                                <div class="contact-icon">🐙</div>
+                                <div class="contact-item-content">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/brookelyncrest" target="_blank">github.com/brookelyncrest</a>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="contact-item">
+                                <div class="contact-icon">💼</div>
+                                <div class="contact-item-content">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/brookelyncrest" target="_blank">linkedin.com/in/brookelyncrest</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Contact Form Section - Right Column Desktop -->
+                <div class="col-12 col-lg-6">
+                    <section class="contact-form-section">
+                        <h3>Want to connect?</h3>
+                        <p>Fill out the form below and I'll be in touch</p>
+
+                        <!-- Form Message Display -->
+                        <div id="formMessage" class="form-message"></div>
+
+                        <form id="contactForm" class="contact-form">
+                            <!-- Name Field -->
+                            <div class="form-group mb-3">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-control"
+                                    placeholder="Brooke Lyncrest"
+                                    required
+                                    autocomplete="name"
+                                >
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="form-group mb-3">
+                                <label for="email" class="form-label">Your Email *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-control"
+                                    placeholder="brookelyncrest@example.com"
+                                    required
+                                    autocomplete="email"
+                                >
+                            </div>
+
+                            <!-- Subject Field -->
+                            <div class="form-group mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="form-control"
+                                    placeholder="What is your inquiry?"
+                                    autocomplete="off"
+                                >
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form-group mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-control"
+                                    placeholder="Explain how I can help you..."
+                                    rows="5"
+                                    required
+                                    autocomplete="off"
+                                ></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary submit-button w-100">Send Message</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Connect With Me!</h3>
+            <div class="contact-links">
+                <a href="mailto:brooke.lyncrest@southeasttech.edu" class="contact-link">
+                    <span>📧</span> Email
+                </a>
+                <a href="tel:+6514473881" class="contact-link">
+                    <span>📱</span> Phone
+                </a>
+                <a href="https://github.com/brookelyncrest" class="contact-link" target="_blank">
+                    <span>🐙</span> GitHub
+                </a>
+                <a href="https://linkedin.com/in/brookelyncrest" class="contact-link" target="_blank">
+                    <span>💼</span> LinkedIn
+                </a>
+            </div>
+        </div>
+        <p class="footer-text">&copy; 2025 Brooke's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS for interactive components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
