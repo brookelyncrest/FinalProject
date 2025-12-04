@@ -1,0 +1,206 @@
+/*
+Created by: Brooke Lyncrest
+File Name: about.css
+Date: 12/03/2025
+*/
+
+/* Bio Section Styles */
+.about-section {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.bio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #F5F3FF 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(109, 40, 217, 0.1);
+}
+
+.bio-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.bio-content p {
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.bio-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(109, 40, 217, 0.2);
+}
+
+.bio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Background Section Styles */
+.background-section {
+    margin-bottom: 3rem;
+}
+
+.background-section h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.background-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.background-item {
+    background-color: #F5F3FF;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-purple);
+    transition: all 0.3s ease;
+}
+
+.background-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(14, 165, 233, 0.15);
+    background-color: #E9D5FF;
+}
+
+.background-item h4 {
+    color: var(--primary-purple);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.background-item p {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 768px) {
+    .bio-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .bio-image {
+        height: 300px;
+    }
+
+    .background-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .background-item {
+        padding: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .skill-card {
+        padding: 1.25rem;
+        min-height: 180px;
+    }
+
+    .skill-icon {
+        font-size: 2rem;
+    }
+
+    .skill-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .additional-skills {
+        padding: 1.5rem;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .bio-container {
+        padding: 1rem;
+    }
+
+    .bio-image {
+        height: 250px;
+    }
+
+    .background-content {
+        gap: 0.75rem;
+    }
+
+    .background-item {
+        padding: 1rem;
+    }
+
+    .background-item h4 {
+        font-size: 1.1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .skill-card {
+        padding: 1rem;
+        min-height: 150px;
+    }
+
+    .skill-icon {
+        font-size: 1.8rem;
+    }
+
+    .skill-card h4 {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+    }
+
+    .skill-card p {
+        font-size: 0.85rem;
+    }
+
+    .additional-skills {
+        padding: 1rem;
+    }
+
+    .skills-list li {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.75rem;
+    }
+}
